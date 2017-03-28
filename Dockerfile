@@ -45,7 +45,7 @@ COPY setupmix.sh /setupmix.sh
 
 RUN chmod +x /setupmix.sh
 
-#RUN /setupmix.sh
+RUN /setupmix.sh
 
 EXPOSE 4000
 
