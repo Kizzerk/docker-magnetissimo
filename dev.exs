@@ -38,4 +38,4 @@ config :magnetissimo, Magnetissimo.Repo,
   password: "torrentz",
   hostname: "localhost",
   port: 5432,
-  pool_size: 10
+  pool_size: 50
