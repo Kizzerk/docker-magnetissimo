@@ -1,0 +1,17 @@
+version: "2"
+
+services:
+  magnetissimo:
+    build: .
+    ports:
+      - "4000:4000"
+    links:
+      - postgres:postgres
+
+  postgres:
+    ports:
+      - "5432:5432"
+    environment:
+      - POSTGRES_PASSWORD=torrentz
+      - POSTGRES_USER=torrent
+    image: postgres:latest
