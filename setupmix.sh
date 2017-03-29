@@ -3,8 +3,8 @@
 cd /magnetissimo
 
 yes | mix deps.get
-
-yes | mix ecto.create
+mix local.rebar --force
+mix ecto.create
 mix ecto.migrate
 
 
