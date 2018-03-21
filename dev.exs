@@ -34,7 +34,7 @@ config :phoenix, :stacktrace_depth, 20
 config :magnetissimo, Magnetissimo.Repo,
   adapter: Ecto.Adapters.Postgres,
   database: "torrent",
-  username: "torrent",
+  username: "magnet",
   password: "torrentz",
   hostname: "localhost",
   port: 5432,
